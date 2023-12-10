@@ -1,5 +1,5 @@
 # Interpreting Indirect Answers to Yes-No Questions in Multiple Languages
-The repository for EMNLP 2023 finding paper: [Interpreting Indirect Answers to Yes-No Questions in Multiple Languages]{https://aclanthology.org/2023.findings-emnlp.146/}
+The repository for EMNLP 2023 finding paper: [Interpreting Indirect Answers to Yes-No Questions in Multiple Languages](https://aclanthology.org/2023.findings-emnlp.146/)
 
 # Dataset 
 
