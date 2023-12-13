@@ -3,16 +3,32 @@ The repository for EMNLP 2023 finding paper: [Interpreting Indirect Answers to Y
 
 # Dataset 
 
-The dataset is available under folder [data](https://github.com/wang-zijie/yn-question-multilingual/data), including [training dataset](https://github.com/wang-zijie/yn-question-multilingual/data/train_dataset), [dev dataset](https://github.com/wang-zijie/yn-question-multilingual/data/test_dataset), and [test dataset](https://github.com/wang-zijie/yn-question-multilingual/data/test_dataset).
+The dataset is available under folder [data](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data), including [training dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/train_dataset), [dev dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/test_dataset), and [test dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/test_dataset).
 
 
-## Statistics
+## Training Dataset Statistics
 
+|                   | Hindi | Korean | Chinese | Bangla | Turkish | Spanish | Nepali | Persian |
+|------------------:| -----:| ------:|  ------:| ------:|  ------:|  ------:| ------:|  ------:|
+| Training instance | 3,109 | 12,976 | 77,128  |   n/a  | 275,732 |  1,489  | n/a    |   n/a   |
+|              % yes|  27.0 | 92.0   | 57.7    |   n/a  |   94.4  |    60.1 | n/a    |   n/a   |
+|               % no|  73.0 |  8.0   | 42.3    |  n/a   |    5.6  |  39.1   |  n/a   |   n/a   |
+
+
+## Benchmark (Test) Dataset Statistics
+|                   | Hindi | Korean | Chinese | Bangla | Turkish | Spanish | Nepali | Persian |
+|------------------:| -----:| ------:|  ------:| ------:|  ------:|  ------:| ------:|  ------:|
+| Benchmark instance|  300  |   300  |    600  |   300  |   600   |   300   |   300  |   300   |
+|              % yes|  44.4 |  52.7  | 38.5    |  34.3  |   43.7  |   54.2  |  46.7  |   46.7  |
+|               % no|  43.3 |  27.3  | 30.5    |  32.0  |   32.7  |   12.0  |  36.3  |   32.0  |
+|           % middle|  12.7 |  20.0  | 31.0    |  33.7  |   23.6  |   32.8  |  17.0  |   21.3  |
 
 
 ## Dataset Fields
 
-
+* ```Question:``` A yes-no question extracted from data sources using our rules.
+* ```Answer:``` The answer to the yes-no question (the turn immediately after the question turn)extracted from the original data sources.
+* ```Label:``` The interpretation of the answer. For answers in the training dataset, the interpretation is based on the keyword extraction and thus can only be ```yes``` or ```no```. For answers in the benchmark dataset, the interpretation is made by human annotators and can be ```yes```, ```no``` or ```middle (neither yes nor no)```.
 # Requirements
 
 Install required packages
