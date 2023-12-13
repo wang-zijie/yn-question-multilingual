@@ -3,11 +3,23 @@ The repository for EMNLP 2023 finding paper: [Interpreting Indirect Answers to Y
 
 # Dataset 
 
-## Download
+The dataset is available under folder [data](https://github.com/wang-zijie/yn-question-multilingual/data), including [training dataset](https://github.com/wang-zijie/yn-question-multilingual/data/train_dataset), [dev dataset](https://github.com/wang-zijie/yn-question-multilingual/data/test_dataset), and [test dataset](https://github.com/wang-zijie/yn-question-multilingual/data/test_dataset).
 
 
 ## Statistics
+
+
+
 ## Dataset Fields
+
+
+# Requirements
+
+Install required packages
+```
+pip install --upgrade pip
+pip install -r ./requirements.txt
+```
 
 # Citation
 
