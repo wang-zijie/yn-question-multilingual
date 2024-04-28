@@ -3,7 +3,7 @@ The repository for EMNLP 2023 finding paper: [Interpreting Indirect Answers to Y
 
 # Dataset 
 
-The dataset is available under folder [data](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data), including [training dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/train_dataset), [dev dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/test_dataset), and [test dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/test_dataset).
+The dataset is available under folder [data](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data), including [training dataset](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/train_dataset), and [benchmark (dev + test)](https://github.com/wang-zijie/yn-question-multilingual/tree/main/data/test_dataset).
 
 
 ## Training Dataset Statistics
@@ -25,10 +25,11 @@ The dataset is available under folder [data](https://github.com/wang-zijie/yn-qu
 
 
 ## Dataset Fields
-
-* ```Question:``` The yes-no question that is extracted from dataset.
-* ```Answer:``` The answer to the yes-no question (the turn immediately after the question turn).
-* ```Label:``` The interpretation of the answer. For answers in the training dataset, the interpretation is based on the keyword extraction and thus can only be ```yes``` or ```no```. For answers in the benchmark dataset, the interpretation is made by human annotators and can be ```yes```, ```no``` or ```middle (neither yes nor no)```.
+* ```pre_turn_n (only for some datasets):``` dialogue turn before the yes-no question (if available). 4 turns (from pre_sent_1 to pre_sent_4) are included.
+* ```question:``` The yes-no question.
+* ```answer:``` The answer to the yes-no question (the turn immediately after the question turn).
+* ```aft_turn_n (only for some datasets):``` dialogue turn after the yes-no question (if available). 4 turns (from aft_sent_1 to aft_sent_4) are included.
+* ```label:``` The interpretation of the answer. For answers in the training dataset, the interpretation is based on the keyword extraction and thus can only be ```yes``` or ```no```. For answers in the benchmark dataset, the interpretation is made by human annotators and can be ```yes```, ```no``` or ```middle (neither yes nor no)```.
 <!-- # Requirements
 
 Install required packages
