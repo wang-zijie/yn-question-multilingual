@@ -15,7 +15,7 @@ The dataset is available under folder [data](https://github.com/wang-zijie/yn-qu
 |               % no|  73.0 |  8.0   | 42.3    |  n/a   |    5.6  |  39.1   |  n/a   |   n/a   |
 
 
-## Benchmark (Test) Dataset Statistics
+## Benchmark (validation and test) Dataset Statistics
 |                   | Hindi | Korean | Chinese | Bangla | Turkish | Spanish | Nepali | Persian |
 |------------------:| -----:| ------:|  ------:| ------:|  ------:|  ------:| ------:|  ------:|
 | Benchmark instance|  300  |   300  |    600  |   300  |   600   |   300   |   300  |   300   |
@@ -26,16 +26,16 @@ The dataset is available under folder [data](https://github.com/wang-zijie/yn-qu
 
 ## Dataset Fields
 
-* ```Question:``` A yes-no question extracted from data sources using our rules.
-* ```Answer:``` The answer to the yes-no question (the turn immediately after the question turn)extracted from the original data sources.
+* ```Question:``` The yes-no question that is extracted from dataset.
+* ```Answer:``` The answer to the yes-no question (the turn immediately after the question turn).
 * ```Label:``` The interpretation of the answer. For answers in the training dataset, the interpretation is based on the keyword extraction and thus can only be ```yes``` or ```no```. For answers in the benchmark dataset, the interpretation is made by human annotators and can be ```yes```, ```no``` or ```middle (neither yes nor no)```.
-# Requirements
+<!-- # Requirements
 
 Install required packages
 ```
 pip install --upgrade pip
 pip install -r ./requirements.txt
-```
+``` -->
 
 # Citation
 
